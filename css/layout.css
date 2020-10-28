@@ -1,0 +1,77 @@
+/* placing each  element under each  other without wrapping it */
+.app-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Set sidenav elements to be in colum, spaced and center */
+.app-nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+/* Set the app content in column, 
+non-wrapping with a height that fits the content 
+and a parent container that takes as much width as possible */
+.app-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+/* Setting most html classes to a flexible display,
+arranged in rows that takes as much width as possible */
+.app-top,
+.album,
+.track-item,
+.app-bottom,
+.current {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/* Setting the track list elements in column */
+.tracklist {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Setting each elements of the track list to be non wrapping elements
+with a space between title of the song and its duration */
+.track-item {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Vertically centering the elements*/
+.current {
+    align-items: center;
+}
+
+/* Spacing and vertically centering elements */
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Reducing the size of the div */
+.app-bottom {
+    height: 1%;
+}
+
+/* Applying a color to the background */
+.app-nav,
+.app-bottom {
+    background-color: #313131;
+}
+
+/* Creating a linear gradient for the background from black to grey, 
+and top to bottom */
+.app-top {
+    background: linear-gradient(#000, #313131);
+}
